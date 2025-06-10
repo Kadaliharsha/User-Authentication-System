@@ -1,0 +1,155 @@
+body {
+  background: #f6f8fb;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.form-container, .dashboard-container {
+  max-width: 380px;
+  margin: 48px auto;
+  padding: 36px 32px 32px 32px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e6e8ec;
+  font-family: inherit;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.form-logo {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  background: #eaf1fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #2563eb;
+}
+
+.form-container h2, .dashboard-container h2 {
+  margin-bottom: 10px;
+  color: #222;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.2px;
+}
+
+.form-container form, .dashboard-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-container input, .dashboard-container input {
+  padding: 12px 14px;
+  border: 1.5px solid #e6e8ec;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  outline: none;
+  background: #f8fafc;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.form-container input:focus, .dashboard-container input:focus {
+  border: 1.5px solid #2563eb;
+  box-shadow: 0 0 0 2px #eaf1fb;
+  background: #fff;
+}
+
+.form-container button, .dashboard-container button {
+  padding: 12px 0;
+  background: linear-gradient(90deg, #2563eb 60%, #1e40af 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  letter-spacing: 0.5px;
+}
+
+.form-container button:hover, .dashboard-container button:hover {
+  background: linear-gradient(90deg, #1e40af 60%, #2563eb 100%);
+  box-shadow: 0 4px 16px rgba(37,99,235,0.13);
+}
+
+.error-msg {
+  color: #e74c3c;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  border: 2.5px solid #eaf1fb;
+}
+
+.logout-btn {
+  background: linear-gradient(90deg, #e74c3c 60%, #c0392b 100%) !important;
+  margin-top: 28px;
+  width: 100%;
+  padding: 13px 0;
+  font-weight: 700;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px rgba(231,76,60,0.08);
+  letter-spacing: 0.5px;
+  border-radius: 999px;
+}
+.logout-btn:hover {
+  background: linear-gradient(90deg, #c0392b 60%, #e74c3c 100%) !important;
+  box-shadow: 0 4px 16px rgba(231,76,60,0.13);
+}
+
+.delete-account-btn {
+  background: linear-gradient(90deg, #f87171 60%, #b91c1c 100%) !important;
+  color: #fff;
+  width: 100%;
+  padding: 13px 0;
+  font-weight: 700;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px rgba(248,113,113,0.08);
+  letter-spacing: 0.5px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  margin-top: 18px;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.delete-account-btn:hover {
+  background: linear-gradient(90deg, #b91c1c 60%, #f87171 100%) !important;
+  box-shadow: 0 4px 16px rgba(248,113,113,0.13);
+}
+
+@media (max-width: 500px) {
+  .form-container, .dashboard-container {
+    max-width: 98vw;
+    padding: 18px 4vw 18px 4vw;
+  }
+  .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+} 
